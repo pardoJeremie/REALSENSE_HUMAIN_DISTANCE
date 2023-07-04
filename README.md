@@ -12,7 +12,7 @@ Remark, this code is not at all optimized :smile:
 To accomplish this task, we simply use a "humain pose" neural network to infere from the realsense color frame and calculate the distance of the infered humain pose by aligning the points/joints of the resulting skeleton to the depth frame.
 Finding the mean of those points/joints is a good approximation of the distance of the infered humain.
 
-## Where do the code comme from
+## Where do the code comes from
 
 The code is mainly a mix of different realsense SDK examples and tutorial adapted to work in a IA "humain pose" inferance example.
 The added/modified code to the inerance example is followed by a <code>//* comment</code> or balised by a <code>//* start/end of new code </code>.
