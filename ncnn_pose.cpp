@@ -71,7 +71,7 @@ static float draw_pose_and_return_distance(const cv::Mat& image, const std::vect
 
     std::sort(distanceVec.begin(),distanceVec.end());// sort the vector
 
-    return distanceVec.at(round(distanceVec.size()/2)); //* return the mean distance
+    return distanceVec.at(round(distanceVec.size()/2) - 1); //* return the mean distance
     //* end new code
 }
 //-----------------------------------------------------------------------------------------------------------------------
