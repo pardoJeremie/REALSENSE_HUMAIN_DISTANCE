@@ -61,12 +61,9 @@ static float draw_pose_and_return_distance(const cv::Mat& image, const std::vect
             cv::circle(image, keypoint.p, 4, bgr.at<cv::Vec3b >(keypoint.p) , -1);
 
             distanceVec.push_back(depthFrame.get_distance(keypoint.p.x,keypoint.p.y));//* add the distance of the point/joint in meter to distanceVec
-
-            std::cout << depthFrame.get_distance(keypoint.p.x,keypoint.p.y)<< "; ";
         }
         //* end new code
     }
-    std::cout << std::endl;
 
     //* start new code
     if (distanceVec.empty())

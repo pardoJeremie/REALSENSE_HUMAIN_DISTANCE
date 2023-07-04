@@ -3,6 +3,8 @@
 This is a small Realsense project in C++ compiled on a raspberry pi 4. 
 The goald of this project is to detect a humain and display their distance from a intelrealsense d435i data stream.
 
+![run example](IMG.jpg)
+
 ## How
 
 To accomplish this task we simply use a "humain pose" neural network to infere from the realsense color frame and calculate the distance of the infered humain pose by alligned the points/joints of the resulting skeleton to the depth frame.
@@ -21,4 +23,4 @@ Some of the realsense code was directly taken from this realsense SDK [opencv gu
 ## Installation guide
 
 - Tencent ncnn framework was installed using [this guide](https://qengineering.eu/install-ncnn-on-raspberry-pi-4.html).
-- The ralsense SDK was installed on rasbian following [this support thread](https://support.intelrealsense.com/hc/en-us/community/posts/360048495493--Intel-Realsense-D435-with-RaspberryPi-Best-practice-installation-guide)
+- The realsense SDK was installed on rasbian following [this support thread](https://support.intelrealsense.com/hc/en-us/community/posts/360048495493--Intel-Realsense-D435-with-RaspberryPi-Best-practice-installation-guide)
