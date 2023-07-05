@@ -9,7 +9,6 @@
 //* start new code
 #include <librealsense2/rs.hpp>
 #include <thread>
-#include <math.h>
 
 #define color_w_const 424
 #define color_h_const 240
@@ -71,7 +70,7 @@ static float draw_pose_and_return_distance(const cv::Mat& image, const std::vect
 
     std::sort(distanceVec.begin(),distanceVec.end());// sort the vector
 
-    return distanceVec.at(round(distanceVec.size()/2) - 1); //* return the mean distance
+    return distanceVec.at(static_cast <int> (distanceVec.size())/2); //* return the mean distance
     //* end new code
 }
 //-----------------------------------------------------------------------------------------------------------------------
