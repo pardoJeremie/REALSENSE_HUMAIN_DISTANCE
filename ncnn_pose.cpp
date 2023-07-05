@@ -217,7 +217,7 @@ void align_get_mat_depth(rs2::frameset * pframeset, cv::Mat* pmatdepth, rs2::col
     //* get detph frame
     rs2::frame frame_depth = pframeset->get_depth_frame().apply_filter(*pcolor_map);
 
-    //* Create OpenCV matrix of size (w,h) from the colorized depth data after the depth mat is align with the color frame
+    //* Create OpenCV matrix of size (w,h) from the colorized depth data after the depth cv::Mat was align with the color frame
     *pmatdepth = cv::Mat(cv::Size(color_w_const, color_h_const), CV_8UC3, (void*)frame_depth.get_data(), cv::Mat::AUTO_STEP); //* old data is automatiquely release in the operator=()
 }
 //* end new code
