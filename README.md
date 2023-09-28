@@ -5,7 +5,7 @@ The goal of this project is to detect humains and display their distance from th
 
 ![run example](IMG.jpg)
 
-Remark, this code is not at all optimized :smile:. Using a [img segmentation neural network](https://github.com/Qengineering/Yolact-ncnn-Raspberry-Pi-4) should give better performance.
+Remark, this code is not at all optimized :smile:. Using an [img segmentation neural network](https://github.com/Qengineering/Yolact-ncnn-Raspberry-Pi-4) should give better performance.
 
 ## How
 
